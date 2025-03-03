@@ -1,0 +1,97 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            text-align: center;
+        }
+        header {
+            background: #c2185b;
+            color: white;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            height: 160px;
+            margin-right: 15px;
+        }
+        h1 {
+            color: white;
+            font-size: 64px;
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+            position: relative;
+            left: -30px; /* Ajuste para centrar mejor con la imagen */
+        }
+        .container {
+            background: white;
+            width: 90%;
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #c2185b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #a3154d;
+        }
+        .forgot-password {
+            margin-top: 10px;
+            display: block;
+            color: #c2185b;
+            text-decoration: none;
+            text-align: center;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo {
+                margin: 0 auto 10px;
+            }
+            h1 {
+                font-size: 48px;
+                left: 0;
+                text-align: center;
+            }
+            .container {
+                width: 95%;
+                padding: 30px;
+            }
+        }
